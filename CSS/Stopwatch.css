@@ -1,0 +1,63 @@
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: url(../../IMAGES/background1.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: gray;
+    padding: 50px;
+}
+.container .display{
+    font-family: monospace;
+    font-size: 5em;
+    color: #ece1e1;
+    background: rgb(0, 0, 177);
+    padding: 20px 30px;
+    margin: 20px;
+    transition: 0.5s ease;
+}
+.container .display:hover{
+    background: hsl(240, 100%, 60%);
+    padding: 25px 40px;
+}
+
+.controls{
+    display: flex;
+    flex-direction: column;
+}
+.controls button{
+    font-size: 2em;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5 ease;
+    background: hsl(120, 100%, 25%);
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+.controls button:hover{
+    background: hsl(120, 100%, 35%);
+    padding: 20px 30px;
+    
+}
+
+/* Media Queries */
+
+@media(max-width: 500px){
+    .container .display{
+        font-size: 3em;
+        font-weight: bold;
+    }
+}
